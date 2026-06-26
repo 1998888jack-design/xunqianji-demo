@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>巡黔记产品线价格带用户感知沙盘 V2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo logoReal" href="#hero"><img src="assets/logo.jpg" alt="巡黔记"><span><strong>巡黔记</strong><small>点击感知沙盘 V2</small></span></a>
+  <nav id="navLinks"><a href="#brand">品牌主张</a><a href="#scenario">场景模拟</a><a href="#ab">A/B 对比</a><a href="#products">产品矩阵</a><a href="#results">测试结果</a></nav>
+  <div class="switch"><button class="mode active" data-mode="A">A版：价格带货架</button><button class="mode" data-mode="B">B版：场景化推荐</button></div>
+</header>
+<main>
+  <section id="hero" class="hero reveal">
+    <div class="heroText">
+      <p class="eyebrow">贵州原产地火锅品牌</p>
+      <h1>巡黔记产品线价格带用户感知沙盘</h1>
+      <p class="sub">模拟用户在电商平台点击不同产品时，对“值不值、适不适合、为什么更贵”的第一感知</p>
+      <div class="tags"><span>贵州原产地美食复兴者</span><span>足不出户吃贵州味</span><span>完整价格带</span></div>
+      <div class="claim">巡黔记不是在卖不同价格的火锅，而是在用不同价格带承接不同用户场景和商业任务。</div>
+    </div>
+    <div class="kv" aria-label="贵州火锅动态视觉区">
+      <i class="mountain"></i><i class="steam s1"></i><i class="steam s2"></i><i class="steam s3"></i>
+      <img class="kvPhoto" src="assets/red-hotpot-hero.jpg" alt="凯里红酸汤火锅商品视觉"><img class="kvPack" src="assets/brand-box.jpg" alt="巡黔记品牌包装盒"><span class="float beef">牛肉</span><span class="float powder">圈圈粉</span><span class="float dip">蘸水</span><span class="float oil">木姜子油</span><span class="gift">高端礼盒</span><span class="cooker">电煮锅</span>
+      <div class="pot"><div class="rim"><div class="soup"><i></i><i></i><i></i></div></div><div class="body"></div></div>
+    </div>
+  </section>
+  <section id="brand" class="section reveal">
+    <div class="heading"><p class="eyebrow">品牌主打系列</p><h2>三条风味线，承接三类购买理由</h2></div>
+    <div class="series">
+      <article class="seriesCard red" data-series="red"><div class="mini redMini"></div><p>品牌主力款</p><h3>红酸汤火锅系列</h3><div class="chips"><span>酸爽开胃</span><span>贵州代表风味</span><span>主销担当</span></div></article>
+      <article class="seriesCard white" data-series="white"><div class="mini whiteMini"></div><p>清爽新品款</p><h3>白酸汤火锅系列</h3><div class="chips"><span>清爽鲜香</span><span>轻盈不厚重</span><span>老客尝鲜</span></div></article>
+      <article class="seriesCard bean" data-series="bean"><div class="mini beanMini"></div><p>浓香暖锅款</p><h3>豆米火锅系列</h3><div class="chips"><span>绵密浓香</span><span>暖胃饱腹</span><span>贵州家常味</span></div></article>
+    </div>
+  </section>
+  <section id="scenario" class="section reveal">
+    <div class="heading"><p class="eyebrow">用户场景模拟</p><h2>如果我是用户，我会从什么场景进入？</h2></div>
+    <div class="scenarioWrap"><div class="scenarioList" id="scenarioList"></div><aside class="scenePanel"><p>用户点击时的第一心理</p><h3 id="sceneMind"></h3><div id="sceneProduct"></div></aside></div>
+  </section>
+  <section id="ab" class="section reveal">
+    <div class="heading"><p class="eyebrow">导购模式切换</p><h2>两种电商表达方式，用户感知有什么不同？</h2></div>
+    <div class="abGrid"><article class="abCard active" data-mode="A"><span>A版</span><h3>价格带货架</h3><p>用户先看价格，再判断值不值。</p><small>适合展示价格梯度，但用户可能只盯便宜款。</small></article><article class="abCard" data-mode="B"><span>B版</span><h3>场景化推荐</h3><p>用户先看自己的需求，再看到适合自己的产品。</p><small>更容易降低选择困难，提升下单信心。</small></article></div>
+  </section>
+  <section id="products" class="section reveal">
+    <div class="heading split"><div><p class="eyebrow">产品矩阵</p><h2 id="matrixTitle">A版：按价格带形成清晰升级货架</h2></div><strong id="flow">39.9 → 158 → 188 → 238 → 248 → 399 → 599</strong></div>
+    <div class="grid" id="productGrid"></div>
+  </section>
+  <section id="results" class="section reveal">
+    <div class="heading"><p class="eyebrow">汇报结论</p><h2>用户感知模拟结果</h2></div>
+    <div class="resultGrid"><article><span>点击最高产品</span><b id="topClick">暂无数据</b></article><article><span>下单信心最高产品</span><b id="topView">暂无数据</b></article><article><span>最容易困惑产品</span><b id="topConfused">暂无数据</b></article><article><span>当前版本结论</span><b id="modeResult">A版更适合展示价格梯度</b></article></div>
+    <div class="summary"><span>A版更适合展示价格梯度</span><span>B版更适合降低选择困难</span><span>399/599 场景化表达更好</span><span>39.9/158/188 价格带更利于比较</span></div>
+  </section>
+</main>
+<div class="modal" id="modal" aria-hidden="true"><div class="shade" data-close></div><section class="modalBox"><button class="x" data-close>×</button><span id="mRole"></span><h2 id="mTitle"></h2><div class="modalBlocks"><article><small>你点击它的第一反应</small><p id="mReaction"></p></article><article><small>你为什么会觉得它值</small><p id="mValue"></p></article><article><small>它比前一档贵在哪里</small><p id="mUpgrade"></p></article><article><small>它最适合谁买</small><p id="mAudience"></p></article></div><div id="scores" class="scores"></div><div class="actions"><button data-feedback="click">我会点击</button><button data-feedback="expensive">我觉得太贵</button><button data-feedback="confused">我还没看懂差异</button></div></section></div>
+<script src="script.js"></script>
+</body>
+</html>
